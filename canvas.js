@@ -1,11 +1,15 @@
 var canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+var texto = document.getElementById("texto");
 
 var c = canvas.getContext("2d");
 
+var cantidad = 50;
+
 function dibujar(){
-    for(i = 0; i < 100; i++){
+    cantidad = parseInt(texto.value);
+    for(i = 0; i < cantidad; i++){
 
         // Circle
         var x = Math.random()* window.innerWidth;
@@ -58,3 +62,5 @@ function dibujar(){
 function limpiar(){
     c.clearRect(0, 0, canvas.width, canvas.width);
 }
+
+

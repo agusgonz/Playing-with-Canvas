@@ -12,13 +12,20 @@
             margin: 0;
 
         }
-        p{
+        div{
             position: absolute;
         }
     </style>
 </head>
 <body>
-    <p><button onclick="dibujar()">RANDOM</button><button onclick="limpiar()">LIMPIAR</button></p>
+    <div>
+        <p>
+            <button onclick="dibujar()">RANDOM</button>
+            <input type="text" name="" id="texto">
+            <button onclick="limpiar()">LIMPIAR</button>
+        </p>
+        
+    </div>
     <canvas></canvas>
     <script src="canvas.js"></script>
 </body>
