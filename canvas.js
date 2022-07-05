@@ -5,7 +5,7 @@ var texto = document.getElementById("texto");
 
 var c = canvas.getContext("2d");
 
-var cantidad = 50;
+var cantidad = 51;
 
 function dibujar(){
     cantidad = parseInt(texto.value);
