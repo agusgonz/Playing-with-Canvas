@@ -61,6 +61,7 @@ function dibujar(){
 
 function limpiar(){
     c.clearRect(0, 0, canvas.width, canvas.width);
+    texto.value = ""
 }
 
 
